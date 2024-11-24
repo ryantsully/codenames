@@ -1,8 +1,5 @@
 import NavBar from './NavBar.jsx'
 import Home from './pages/Home'
-import Programming from './pages/Programming'
-import CreateEntry from './pages/CreateEntry.jsx'
-import BlogDetails from './pages/BlogDetails.jsx'
 import CodeNames from './pages/CodeNames'
 import Wordle from './pages/Wordle'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,17 +20,6 @@ function App() {
               path="/"
               element={<Home />}>
             </Route>
-
-            <Route
-              path="/programming"
-              element={<Programming />}>
-            </Route>
-
-            <Route
-              path="/create"
-              element={<CreateEntry />}>
-            </Route>
-
             <Route
               path="/codenames"
               element={<CodeNames />}>
@@ -42,11 +28,6 @@ function App() {
             <Route
               path="/wordle"
               element={<Wordle />}>
-            </Route>
-
-            <Route
-              path="/blogs/:id"
-              element={<BlogDetails />}>
             </Route>
 
           </Routes>
